@@ -6,193 +6,56 @@ This project presents an interactive **Power BI dashboard** developed using the 
 
 The report was developed as part of **Week 4 – Data Visualization & Dashboarding** during my **Data Analytics Internship at AnalystLab Africa**.
 
----
+> Where does Superstore make money, and where does it lose it? An interactive Power BI dashboard analysing 9,994 order lines from 2014 to 2017.
 
 ## Business Problem
-
-Retail businesses generate large volumes of sales data every day. Without effective analysis, it is difficult to understand sales performance, profitability, customer purchasing behavior, and regional trends.
-
-This project addresses these challenges by transforming raw transactional data into interactive dashboards that support data-driven decision-making.
-
----
-
-## Project Objectives
-
-* Analyze overall sales performance.
-* Evaluate profitability across different product categories.
-* Identify top-performing regions and products.
-* Understand customer purchasing behavior.
-* Monitor sales trends over time.
-* Build an interactive and user-friendly Power BI dashboard.
-
----
+Superstore sales are growing, but growth alone does not show whether the business is healthy. Management needs to know which regions, products and customers drive profit, and which ones quietly lose it, so pricing and discount decisions can be made with evidence.
 
 ## Dataset
+- **Source:** Sample Superstore dataset (CSV)
+- **Size:** 9,994 order lines, 5,009 orders, 793 customers, 1,862 products
+- **Period:** 2014 to 2017
+- **Coverage:** 4 regions, 3 categories, 17 sub-categories
 
-* **Dataset:** Superstore Sales Dataset
-* **Source:** Kaggle
-* **Tool:** Microsoft Power BI
+## Dashboard Pages
+| Page | Focus |
+|------|-------|
+| Superstore Sales Performance Dashboard | Sales, profit and margin overview with region, category and year filters |
+| Product and Regional Performance | Sub-category profitability, sales by state, top 5 products |
+| Customer Purchasing Behavior | Top customers, segments and shipping modes |
 
-The dataset includes information on:
+## Key Metrics
+| Total Sales | Total Profit | Profit Margin | Total Orders | Customers |
+|-------------|--------------|---------------|--------------|-----------|
+| $2.30M | $286.40K | 12.47% | 5,009 | 793 |
 
-* Orders
-* Customers
-* Products
-* Categories
-* Sales
-* Profit
-* Discounts
-* Shipping
-* Regions
-* Order Dates
+## Key Insights
+- Sales grew 51% from $484K (2014) to $733K (2017) and profit grew 89%, lifting margin from 10.2% to 12.7%.
+- West leads with a 14.9% margin because it gives the smallest discounts (11% on average). Central earns only 7.9% because it discounts the most (24% on average).
+- Furniture earns only a 2.5% margin ($18K profit) on $742K in sales, while Technology and Office Supplies earn about 17%.
+- Tables lose $17.7K and Bookcases lose $3.5K. Tables are discounted by 26% on average.
+- Discounts above 20% lose $135K in total, and 97% of those order lines are unprofitable.
+- Texas, Ohio, Pennsylvania and Illinois are loss-making because they discount 32-39% on average.
+- Consumers drive 50.6% of sales but have the lowest margin (11.6%), while Home Office has the best (14.0%).
+- Standard Class carries 59% of sales, and the top 10 customers account for only 6.7% of sales.
 
----
+## Recommendations
+1. Cap discounts at 20%, starting with Central, Texas, Ohio, Pennsylvania and Illinois.
+2. Review pricing and supplier costs for Tables, Bookcases and Furniture overall.
+3. Promote high-margin lines such as Copiers, Accessories and Paper.
+4. Grow Home Office and Corporate accounts, which earn better margins than Consumer.
+5. Introduce loyalty offers to retain top customers.
 
-# Dashboard Pages
+## Tools Used
+- Power BI (data modelling, DAX measures, slicers, interactive visuals)
+- Excel / CSV (source data and validation)
 
-## 1. Executive Overview
-
-This page provides a high-level summary of overall business performance.
-
-### KPIs
-
-* Total Sales: **2M**
-* Total Profit: **286.40K**
-* Total Orders: **5K**
-* Profit Margin: **12%**
-
-### Visualizations
-
-* Sales Trend
-* Sales by Region
-* Profit by Category
-
----
-
-## 2. Product & Regional Performance
-
-This page focuses on product performance and regional sales analysis.
-
-### KPIs
-
-* Total Sales: **2M**
-* Total Profit: **286.40K**
-* Average Discount: **15.6%**
-* Total Products: **2K**
-
-### Visualizations
-
-* Top 5 Products
-* Sales by Category
-* Sales by Sub-Category
-* Sales by State
-
----
-
-## 3. Customer Purchasing Behavior
-
-This page analyzes customer purchasing patterns and delivery preferences.
-
-### KPIs
-
-* Total Sales: **2M**
-* Total Customers: **793**
-* Total Orders: **5K**
-* Average Sales per Customer: **$2.90K**
-
-### Visualizations
-
-* Sales by Customer Segment
-* Profit by Segment
-* Top 10 Customers
-* Sales by Ship Mode
-
----
-
-# Interactive Features
-
-The dashboard includes several interactive features to improve data exploration:
-
-* Interactive slicers
-* Drill-down analysis
-* Custom tooltips
-* KPI cards
-* Multi-page dashboard navigation
-* Dynamic filtering
-
----
-
-# Key Insights
-
-* The West region recorded the highest sales performance.
-* Technology generated the highest profit among all product categories.
-* Phones were the best-selling product sub-category.
-* The Consumer segment contributed the highest sales and profit.
-* Standard Class was the most frequently used shipping mode.
-
----
-
-# Business Recommendations
-
-* Increase investment in high-performing Technology products.
-* Strengthen sales strategies in lower-performing regions.
-* Improve the profitability of Furniture products.
-* Promote high-performing product sub-categories such as Phones.
-* Enhance customer retention through loyalty programs.
-* Continue optimizing Standard Class shipping operations.
-
----
-
-# Tools Used
-
-* Microsoft Power BI
-* DAX
-* Power Query
-* Microsoft Excel
-* Kaggle Superstore Sales Dataset
-
----
-
-# Project Files
-
-* Power BI Dashboard (.pbix)
-* Presentation Slides (.pptx)
-* Dashboard Screenshots
-* README.md
-
----
-
-# Dashboard Preview
-
-> Add screenshots of your dashboard pages here after uploading them to the repository.
-
----
-
-# Skills Demonstrated
-
-* Data Cleaning
-* Data Modeling
-* DAX Measures
-* KPI Development
-* Dashboard Design
-* Data Visualization
-* Business Intelligence
-* Data Storytelling
-* Interactive Reporting
-
----
-
-# Acknowledgement
-
-This project was completed during the **AnalystLab Africa Data Analytics Internship** as part of the Week 4 Data Visualization & Dashboarding assignment.
-
----
+## Repository Contents
+- `Sample_-_Superstore.csv`: source dataset
+- `Superstore_Dashboard.pbix`: Power BI file
+- `Superstore_Report.pdf`: 2-page summary report
+- `Sales_Superstore_Dashboard.pdf`: exported dashboard
 
 ## Author
-
-**Danjuma Zainab**
-
-Aspiring Data Analyst | Power BI | SQL | Excel | Data Visualization
-
-Thank you for visiting this repository. Feedback and suggestions are always welcome.
-
+**Zainab Danjuma**
+Data Analyst Intern, AnalystLab Africa
