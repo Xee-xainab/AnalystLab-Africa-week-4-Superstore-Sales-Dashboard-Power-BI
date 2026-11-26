@@ -54,7 +54,7 @@ Superstore sales are growing, but growth alone does not show whether the busines
 - `Sample_-_Superstore.csv`: source dataset
 - `Superstore_Dashboard.pbix`: Power BI file
 - `Superstore_Report.pdf`: 2-page summary report
-- `Sales_Superstore_Dashboard.pdf`: exported dashboard
+- `Superstore_Dashboard.PDF`: exported dashboard
 
 ## Author
 **Zainab Danjuma**
